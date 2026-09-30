@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maillots flex</title>
+    <meta name="description" content="Boutique de maillots et sacs modernes" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styl.css" />
+  </head>
+  <body>
+
+    <header class="header">
+      <div class="container nav">
+        <a class="logo" href="#accueil" aria-label="Maillots flex, accueil">
+          <img class="logo-image" src="logo/logo..png" alt="" />
+          <span>Maillots flex</span>
+        </a>
+
+        <nav class="menu" aria-label="Menu principal">
+          <a href="#accueil">Accueil</a>
+          <a href="#produits">Produits</a>
+          <a href="#nouveautes">Nouveautés</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <a class="btn btn-primary" href="#produits">Voir les produits</a>
+      </div>
+    </header>
+
+    <main>
+      <section id="accueil" class="hero">
+        <div class="container hero-content">
+          <div class="hero-text">
+            <p class="eyebrow">Boutique sportive</p>
+            <h1>Bienvenue sur <span>Maillots flex</span></h1>
+            <p class="lead">
+              Découvrez une sélection élégante de maillots et de sacs conçus pour allier confort,
+              style et performance au quotidien.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#produits">Découvrir</a>
+              <a class="btn btn-secondary" href="#contact">Me contacter</a>
+            </div>
+            <ul class="stats" aria-label="Statistiques">
+              <li><strong>nous sommes à votre écoute</strong><span>Commandes</span></li>
+              <li><strong>24h</strong><span>Livraison</span></li>
+              <li><strong>satisfaire ou rembourser</strong><span>Clients</span></li>
+            </ul>
+          </div>
+
+          <div class="hero-visual" aria-label="Produits phares">
+            <div class="large-card">
+              <img src="fils/maillot-jpg.jpg" alt="sport" />
+              <div class="card-badge">Vive la CAN</div>
+              <div class="hero-image-caption">
+                <p>La collection</p>
+                <h2>Maillots sportifs</h2>
+              </div>
+            </div>
+            <div class="mini-card">
+              <img src="fils/image2-jpg.jpg" alt="maillots sportifs" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="nouveautes" class="features">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow accent">Pourquoi nous choisir ?</p>
+            <h2>Style moderne, qualité premium</h2>
+          </div>
+
+          <div class="feature-grid">
+            <article class="feature-item">
+              <div class="icon">✨</div>
+              <h3>Rien que pour vous</h3>
+              <p>Des tissus résistants, confortables et conçus pour le sport.</p>
+            </article>
+            <article class="feature-item">
+              <div class="icon">🚀</div>
+              <h3>Livraison rapide</h3>
+              <p>Recevez votre commande en quelques jours dans les meilleures conditions.</p>
+            </article>
+            <article class="feature-item">
+              <div class="icon">🌟</div>
+              <h3>La tendance</h3>
+              <p>Des produits qui allient élégance et esprit sport avec un look indiscutable.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="produits" class="products">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow accent">Nos différents produits</p>
+            <h2>Collections sélectionnées</h2>
+          </div>
+
+          <div class="products-grid">
+            <div class="card">
+              <img src="image/maillot-anglet-jpg.jpeg" alt="Maillot d'Angleterre" />
+              <h3>Maillot d'Angleterre</h3>
+              <p>Taille: M · L · XL</p>
+              <p>6 000 FCFA</p>
+              <button onclick='commander("Maillot d’Angleterre", 6000)'>Commander</button>
+            </div>
+
+            <div class="card">
+              <img src="image/maillot-barça-jpg.jpeg" alt="maillot de Barcelone" />
+              <h3>Maillot de Barcelone</h3>
+              <p>Taille: M · L · XL</p> 
+              <p>6 000 FCFA</p>
+              <button onclick='commander("Maillot de Barcelone", 6000)'>Commander</button>
+            </div>
+
+            <div class="card">
+              <img src="image/maillot-usa-jpg.jpeg" alt="Maillot des États-Unis" />
+              <h3>Maillot des États-Unis</h3>
+              <p>Taille: M · L · XL</p>
+              <p>6 000 FCFA</p>
+              <button onclick='commander("Maillot des États-Unis", 6000)'>Commander </button>
+            </div>
+
+            <div class="card">
+              <img src="image/maillot-bres-jpg.jpeg" alt="maillot du Brésil" />
+              <h3>Maillot du Brésil</h3>
+              <p>Taille: M · L · XL</p>
+              <p>6 000 FCFA</p>
+              <button onclick='commander("Maillot du Brésil", 6000)'>Commander</button>
+            </div>
+
+            <div class="card">
+              <img src="image/maillot-bayern-jpg.jpeg" alt="maillot du Bayern Munich" />
+              <h3>Maillot du Bayern Munich</h3>
+              <p>Taille: M · L · XL</p>
+              <p>6 000 FCFA</p>
+              <button onclick='commander("Maillot du Bayern Munich", 6000)'>Commander</button>
+            </div>
+
+            <div class="card">
+              <img src="image/maillot-france-jpg.jpeg" alt="maillot de la France" />
+              <h3>Maillot de la France</h3>
+              <p>Taille: M · L · XL</p>
+              <p>6 000 FCFA</p>
+              <button onclick='commander("Maillot de la France", 6000)'>Commander</button>
+            </div>
+
+            <div class="card">
+              <img src="image/maillot-réal-jpg.jpeg" alt="maillot du Real Madrid" />
+              <h3>Maillot du Real Madrid</h3>
+              <p>Taille: M · L · XL</p>
+              <p>6 000 FCFA</p>
+              <button onclick="commander('Maillot du               ssh-keygen -t ed25519 -C "votre_email@gmail.com"
+              Get-Content $env:USERPROFILE\.ssh\id_ed25519.pubReal Madrid', 6000)">Commander</button>
+            </div>
+
+            <div class="card">
+              <img src="image/maillot-liverp-jpg.jpeg" alt="maillot de Liverpool" />
+              <h3>Maillot de Liverpool</h3>
+              <p>Taille: M · L · XL</p>
+              <p>6 000 FCFA</p>
+              <button onclick="commander('Maillot de Liverpool', 6000)">Commander</button>
+            </div>
+            <div class="card">
+              <img src="image/maillot-chel-jpg.jpeg" alt="maillot de Chelsea" />
+              <h3>Maillot de Chelsea</h3>
+              <p>Taille: M · L · XL</p>
+              <p>6 000 FCFA</p>
+              <button onclick="commander('Maillot de Chelsea', 6000)">Commander</button>
+            </div>
+            <div class="card">
+              <img src="image/maillot-marsei-jpg.jpeg" alt="maillot de Marseille" />
+              <h3>Maillot de Marseille</h3>
+              <p>Taille: M · L · XL</p>
+              <p>6 000 FCFA</p>
+              <button onclick="commander('Maillot de Marseille', 6000)">Commander</button>
+            </div>
+            <div class="card">
+              <img src="image/maillot-totte-jpg.jpeg" alt="maillot de Tottenham" />
+              <h3>Maillot de Tottenham</h3>
+              <p>Taille: M · L · XL</p>
+              <p>6 000 FCFA</p>
+              <button onclick="commander('Maillot de Tottenham', 6000)">Commander</button>
+            </div>
+            <div class="card">
+              <img src="image/maillot-angle-jpg.jpeg" alt="Maillot d'Angleterre" />
+              <h3>Maillot d'Angleterre</h3>
+              <p>Taille: M · L · XL</p>
+              <p>6 000 FCFA</p>
+              <button onclick='commander("Maillot d’Angleterre", 6000)'>Commander</button>
+            </div>
+
+            
+          </div> 
+            
+
+        </div>
+      </section>
+
+      <section class="cta-band">
+        <div class="container cta-content">
+          <div>
+            <p class="eyebrow accent">Offre spéciale</p>
+            <h2>Profitez d'une réduction sur votre première commande.</h2>
+          </div>
+          <a class="btn btn-primary" href="#contact">Commander maintenant</a>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contact" class="footer">
+      <div class="container footer-grid">
+        <div>
+          <div class="logo footer-logo">
+            <span class="logo-mark">M</span>
+            <span>Maillots flex</span>
+          </div>
+          <p>Boutique moderne dédiée aux passionnés du sport .</p>
+        </div>
+
+        <div>
+          <h3>Navigation</h3>
+          <ul>
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#produits">Produits</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>Contact</h3>
+          <ul>
+            <li>maillotsflex@gmail.com</li>
+            <li>+225 05 64 71 02 31</li>
+            <li>Côte d'Ivoire</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="container footer-bottom">
+        <p>2026 Maillots flex. Tous droits réservés.</p>
+      </div>
+    </footer>
+    
+<script>
+  function commander(nom, prix) {
+    const numero = "2250564710231";
+
+    const message =
+      "Bonjour Maillots Flex ! Je souhaite commander : "
+      + nom
+      + " - Prix : " + prix.toLocaleString("fr-FR") + " FCFA";
+
+    const lien =
+      "https://wa.me/" + numero
+      + "?text=" + encodeURIComponent(message);
+
+    window.open(lien, "_blank");
+  }
+</script>
+</body>
+</html>
